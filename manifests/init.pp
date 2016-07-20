@@ -3,7 +3,7 @@ class apt(
   $update   = {},
   $purge    = {},
   $proxy    = {},
-  $sources  = {},
+  $sources  = hiera_hash(apt::source),
   $keys     = {},
   $ppas     = {},
   $pins     = {},
