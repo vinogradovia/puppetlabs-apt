@@ -8,6 +8,7 @@ class apt(
   $ppas     = {},
   $pins     = {},
   $settings = {},
+  $stage    = 'main',
 ) inherits ::apt::params {
 
   $frequency_options = ['always','daily','weekly','reluctantly']
