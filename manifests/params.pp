@@ -1,4 +1,4 @@
-class apt::params {
+class apt::params inherits ::stdlib {
 
   if $::osfamily != 'Debian' {
     fail('This module only works on Debian or derivatives like Ubuntu')
